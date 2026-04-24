@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script type="text/javascript">
-      window.scrw=window.scrw||function(){(scrw.q=scrw.q||[]).push(arguments)};
-      window.scrw('token', '6567fd1b-29df-46b7-8a75-fae32daecc30');
-      window.scrw('providerId', '161624');
-      window.scrw('env', 'dev');
-  </script>
-  <script async src="https://cdn.socialclimb.com/scrw-min.js"></script>
+      <script type="text/javascript">
+        window.scrw=window.scrw||function(){(scrw.q=scrw.q||[]).push(arguments)};
+        window.scrw('token', '6567fd1b-29df-46b7-8a75-fae32daecc30');
+        window.scrw('providerId', '161624');
+        window.scrw('env', 'dev');
+    </script>
+    <script async src="https://cdn.socialclimb.com/scrw-min.js"></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dr. Mitch | Orthopedic Surgery & Sports Medicine | Lehi, UT</title>
@@ -287,10 +287,37 @@
     }
     .stat span { font-size: 0.85rem; color: var(--muted); }
 
-    #sc-badge {
-      margin: 1.25rem 0;
-      min-height: 0;
+    /* About column: title → reviews badge → bio → CTA */
+    .about-copy {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 52ch;
+    }
+    .about-copy > .section-title {
+      margin: 0 0 0.875rem;
+    }
+    #about #sc-badge {
+      width: fit-content;
+      max-width: 100%;
+      margin: 0 0 1.625rem;
       scroll-margin-top: 5.5rem;
+    }
+    .about-bio {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.125rem;
+      margin: 0 0 1.625rem;
+    }
+    .about-bio p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: 1rem;
+    }
+    .about-copy .about-cta {
+      flex-shrink: 0;
     }
 
     .contact-grid {
@@ -364,16 +391,18 @@
           <li>Same-day injury clinic slots</li>
         </ul>
       </div>
-      <div>
+      <div class="about-copy">
         <h2 class="section-title" id="about-heading">Meet Dr. Mitch</h2>
         <div id="sc-badge"></div>
-        <p class="section-sub">
-          Patients know him as <strong>Dr. Mitch</strong>—Mitchell Chen, MD. He treats athletes, weekend warriors, and anyone sidelined by joint pain or injury. His approach pairs clear communication with surgical precision when surgery is truly the best option, and conservative care when it isn’t.
-        </p>
-        <p class="section-sub" style="margin-top: -1rem;">
-          Whether you need a second opinion on a knee replacement, a torn rotator cuff evaluated, or a fracture set and followed to healing, you’ll get a straightforward plan and respectful, unrushed visits.
-        </p>
-        <a class="btn btn-outline" href="#contact">Request an appointment</a>
+        <div class="about-bio">
+          <p>
+            Patients know him as <strong>Dr. Mitch</strong>—Mitchell Chen, MD. He treats athletes, weekend warriors, and anyone sidelined by joint pain or injury. His approach pairs clear communication with surgical precision when surgery is truly the best option, and conservative care when it isn’t.
+          </p>
+          <p>
+            Whether you need a second opinion on a knee replacement, a torn rotator cuff evaluated, or a fracture set and followed to healing, you’ll get a straightforward plan and respectful, unrushed visits.
+          </p>
+        </div>
+        <a class="btn btn-outline about-cta" href="#contact">Request an appointment</a>
       </div>
     </div>
   </section>
