@@ -287,21 +287,10 @@
     }
     .stat span { font-size: 0.85rem; color: var(--muted); }
 
-    .reviews-section {
-      background: var(--white);
-    }
-    .reviews-placeholder {
-      min-height: 200px;
-      border: 2px dashed rgba(45, 106, 143, 0.35);
-      border-radius: var(--radius);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      font-size: 0.95rem;
-      text-align: center;
-      padding: 2rem;
-      background: var(--accent-soft);
+    #sc-badge {
+      margin: 1.25rem 0;
+      min-height: 0;
+      scroll-margin-top: 5.5rem;
     }
 
     .contact-grid {
@@ -351,34 +340,13 @@
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#reviews">Patient reviews</a></li>
+          <li><a href="#sc-badge">Patient reviews</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a class="btn btn-primary" href="tel:+18019982830">Call office</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
-  <section class="hero" aria-labelledby="hero-heading">
-    <div class="hero-inner">
-      <div>
-        <h1 id="hero-heading">Expert care for bones, joints &amp; active lifestyles</h1>
-        <p class="hero-lead">
-          Dr. Mitch focuses on hip and knee replacement, shoulder arthroscopy, ACL and sports injuries, and fracture care—using modern, evidence-based techniques so you can get back to what matters.
-        </p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="tel:+18019982830">Schedule a visit</a>
-          <a class="btn btn-outline" href="#services" style="border-color: rgba(255,255,255,0.45); color: #fff;">View services</a>
-        </div>
-      </div>
-      <div class="hero-card">
-        <h2>Utah County office</h2>
-        <p>
-          Conveniently located in Lehi with on-site imaging partners nearby. Most insurance plans accepted; our team will verify benefits before your visit.
-        </p>
-      </div>
-    </div>
-  </section>
 
   <section id="about" aria-labelledby="about-heading">
     <div class="section-inner about-grid">
@@ -404,7 +372,29 @@
         <p class="section-sub" style="margin-top: -1rem;">
           Whether you need a second opinion on a knee replacement, a torn rotator cuff evaluated, or a fracture set and followed to healing, you’ll get a straightforward plan and respectful, unrushed visits.
         </p>
+        <div id="sc-badge"></div>
         <a class="btn btn-outline" href="#contact">Request an appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-inner">
+      <div>
+        <h1 id="hero-heading">Expert care for bones, joints &amp; active lifestyles</h1>
+        <p class="hero-lead">
+          Dr. Mitch focuses on hip and knee replacement, shoulder arthroscopy, ACL and sports injuries, and fracture care—using modern, evidence-based techniques so you can get back to what matters.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="tel:+18019982830">Schedule a visit</a>
+          <a class="btn btn-outline" href="#services" style="border-color: rgba(255,255,255,0.45); color: #fff;">View services</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h2>Utah County office</h2>
+        <p>
+          Conveniently located in Lehi with on-site imaging partners nearby. Most insurance plans accepted; our team will verify benefits before your visit.
+        </p>
       </div>
     </div>
   </section>
@@ -449,15 +439,6 @@
         <div class="stat"><strong>4.9</strong><span>Average patient rating</span></div>
         <div class="stat"><strong>2k+</strong><span>Joint procedures performed</span></div>
         <div class="stat"><strong>6</strong><span>Days a week injury phone line</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="reviews-section" id="reviews" aria-labelledby="reviews-heading">
-    <div class="section-inner">
-      <h2 class="section-title" id="reviews-heading">Patient reviews</h2>
-      <p class="section-sub">Real feedback from patients and families we’ve had the privilege to treat.</p>
-      <div id="sc-badge">
       </div>
     </div>
   </section>
